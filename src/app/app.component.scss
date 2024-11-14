@@ -1,0 +1,94 @@
+/* Container styling for centering and background */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: #333;
+}
+
+/* Styling for the header */
+h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the dropdown group container */
+.dropdown-group {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Label styling for a clean look */
+label {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Styling for select elements */
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #f4f7fa;
+    color: #333;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* Styling for focus and hover states */
+select:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 4px 8px rgba(106, 17, 203, 0.2);
+}
+
+select:hover:not(:disabled) {
+    border-color: #6a11cb;
+    background-color: #e6ebf5;
+    cursor: pointer;
+}
+
+/* Disabled select styling */
+select:disabled {
+    background-color: #e9ecef;
+    color: #999;
+    cursor: not-allowed;
+}
+
+/* Styling for container alignment and gaps */
+.dropdown-group>* {
+    margin-bottom: 10px;
+}
+
+.dropdown-group>*:last-child {
+    margin-bottom: 0;
+}
+
+/* Additional styles for a smoother, modern look */
+.dropdown-group::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 50px;
+    background-color: #6a11cb;
+    margin: 20px auto 0;
+    border-radius: 2px;
+}
