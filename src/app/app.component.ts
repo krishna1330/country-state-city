@@ -10,6 +10,9 @@ import csc from 'countries-states-cities';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
+// https://www.npmjs.com/package/countries-states-cities#docs
+
 export class AppComponent implements OnInit {
   title = 'country-state-city';
   countries: any[] = [];
